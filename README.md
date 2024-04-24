@@ -27,7 +27,7 @@ Follow Setup Wizard
 Boot into `PFSense`  
 Follow Setup Wizard
 >[!IMPORTANT]
->Create a fiewall Rule from x.x.x.x (the client IP address) to y.y.y.y ( the WAN IP address) on TCP port 443: to be able to manage the firewall
+>Create a firewall Rule from x.x.x.x (the client IP address) to y.y.y.y ( the WAN IP address) on TCP port 443: to be able to manage the firewall
  ```
  easyrule pass wan tcp x.x.x.x y.y.y.y 443  
  ```
