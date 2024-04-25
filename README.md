@@ -44,6 +44,6 @@ pfctl -d
 
 Copy your Public IP Address into your preferred browser.  
 
-The default credentials:
+The default credentials:  
 `admin`  
 `pfsense`  
