@@ -10,6 +10,15 @@ Console: `Serial`
 
 > [!TIP]
 > Upload the image to Linode Object Storage as you will be needing to curl it to the Disk via Lish Console
+## Clone the Repo
+Clone the repo by copying the commands below  
+```
+git clone https://github.com/JoseVegaPro/PFSense-Linode-Terraform/
+```
+CD into 
+```
+cd PFSense-Linode-Terraform
+```
 
 ## Rescue Linode
 Reboot into Rescue mode
