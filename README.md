@@ -23,8 +23,7 @@ Example command below
 curl https://Object_storage_URL_goes_here.com/pfSense-CE-memstick-serial-2.7.0-RELEASE-amd64.img | dd  of=/dev/sda
 ```
 Boot into `Installer` 
-On your Lish Console you will be selecting type [vt100]: `xterm`  
-Follow Setup Wizard
+On your Lish Console you will be selecting type [vt100]: `xterm` Follow Setup Wizard  
 After you have completed the setup Wizard on the Installer configuration Boot into `PFSense`  
 
 >[!IMPORTANT]
