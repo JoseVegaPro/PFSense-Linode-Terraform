@@ -19,8 +19,21 @@ CD into
 ```
 cd PFSense-Linode-Terraform
 ```
+Initialize Terraform  
+```
+terraform init
+```
+You can review the deployment running  
+```
+terraform plan
+```
+To deploy run  
+```
+terraform apply
+```
 
 ## Rescue Linode
+After Terraform has finished  
 Reboot into Rescue mode
 /dev/sda: `Installer`  
 /dev/sdb: `None`  
