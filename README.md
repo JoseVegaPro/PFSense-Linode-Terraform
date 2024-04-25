@@ -17,15 +17,16 @@ Reboot into Rescue mode
 /dev/sdb: `None`  
 /dev/sdc: `None`  
 Launch Lish Console  
-curl your image and write to | dd  of=/dev/sda
+curl your image and write to | dd  of=/dev/sda 
+Example command below
 ```
 curl https://Object_storage_URL_goes_here.com/pfSense-CE-memstick-serial-2.7.0-RELEASE-amd64.img | dd  of=/dev/sda
 ```
-Boot into `Installer` Configuration  
-Console type [vt100]: `xterm`  
-Follow Setup Wizard  
-Boot into `PFSense`  
+Boot into `Installer` 
+On your Lish Console you will be selecting type [vt100]: `xterm`  
 Follow Setup Wizard
+After you have completed the setup Wizard on the Installer configuration Boot into `PFSense`  
+
 >[!IMPORTANT]
 >Create a firewall Rule from x.x.x.x (the client IP address) to y.y.y.y ( the WAN IP address) on TCP port 443: to be able to manage the firewall
  ```
