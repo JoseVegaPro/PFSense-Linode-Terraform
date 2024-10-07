@@ -1,18 +1,30 @@
+# Linode API Token, sensitive value
 variable "linodetoken" {
   type      = string
   sensitive = true
-  default   = "YOUR_LINODE_API_TOKEN_HERE"
+  default   = "3f03adb82c57fdda93ed63891961026e6acf0e24959ca67ce0bd2be6c5d9fc73"
 }
+
+# Default region is set to Osaka (jp-osa)
 variable "region" {
   type    = string
-  # If you do not specify a region, Osaka is set to be the default. Modify to the region of your choice
   default = "jp-osa"
 }
+
+# Instance type for the Linode (g6-standard-1 is the default)
 variable "instancetype" {
   type    = string
   default = "g6-standard-1"
 }
+
+# Tags for the Linode instances (a list of strings, not a single string)
 variable "tags" {
-  type    = string
-  default = "Kibou"
+  type    = list(string)
+  default = ["Kibou"]
+}
+
+# Number of PFsense instances to create (default is 5)
+variable "pfsense_count" {
+  type    = number
+  default = 5
 }
